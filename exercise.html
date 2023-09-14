@@ -20,9 +20,7 @@
       //Creating the checkbox element
       const checkbox = document.createElement("input");
       checkbox.setAttribute("type", "checkbox");
-      if(obj.completed === true){
-        checkbox.setAttribute("checked", "true");
-      }
+      checkbox.setAttribute("checked", obj.completed);
       document.getElementById("container").appendChild(checkbox);
     }
     catch{
